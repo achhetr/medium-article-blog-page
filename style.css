@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Mukta', sans-serif;
+	overflow-x: hidden;
+	max-width: 380px;
+}
+
+.header {
+	background: linear-gradient(rgba(32, 56, 41, 0.5), rgba(25, 31, 31, 0.5)),
+		url('https://cdn.pixabay.com/photo/2014/02/12/18/11/lettuce-264826__480.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header h1 {
+	font-size: 5rem;
+	color: white;
+}
+
+.header p {
+	font-size: 2rem;
+	color: white;
+}
+
+.container {
+	max-width: 60vw;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.box {
+	padding-top: 1rem;
+	margin: 1rem 0;
+	border-bottom: 1px solid #002626;
+}
+
+.box h2 {
+	font-size: 1.5rem;
+	color: #245f61;
+	margin-bottom: 1rem;
+}
+
+.box p {
+	font-size: 1.2rem;
+	color: #002626;
+	padding-bottom: 1rem;
+}
+
+/* (576px, 768px, 992px and 1200px). */
+
+@media (max-width: 992px) {
+	.header {
+		height: 450px;
+	}
+	.header h1 {
+		font-size: 4rem;
+	}
+	.header p {
+		font-size: 1.8rem;
+	}
+	.container {
+		max-width: 70vw;
+	}
+	.box {
+		padding: 1rem 0;
+	}
+	.box p {
+		font-size: 1rem;
+	}
+}
+@media (max-width: 768px) {
+	.header {
+		height: 350px;
+	}
+	.header h1 {
+		font-size: 3.2rem;
+	}
+	.header p {
+		font-size: 1.4rem;
+	}
+	.container {
+		max-width: 70vw;
+	}
+	.box h2 {
+		text-align: center;
+	}
+	.box p {
+		font-size: 0.9rem;
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		height: 150px;
+	}
+	.header h1 {
+		padding-top: 1rem;
+		font-size: 2.2rem;
+	}
+	.header p {
+		font-size: 1rem;
+	}
+	.container {
+		max-width: 85vw;
+		padding-top: 0;
+	}
+	.box {
+		margin: 0;
+	}
+	.box h2 {
+		font-size: 1.2rem;
+		font-weight: 700;
+		text-align: center;
+	}
+	.box p {
+		font-size: 0.8rem;
+	}
+}
