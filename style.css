@@ -34,8 +34,12 @@ body {
 	color: white;
 }
 
+main {
+	width: 100vw;
+}
+
 .container {
-	max-width: 60vw;
+	width: 70vw;
 	margin: 0 auto;
 	padding-top: 2rem;
 }
@@ -71,7 +75,7 @@ body {
 		font-size: 1.8rem;
 	}
 	.container {
-		max-width: 70vw;
+		width: 70vw;
 	}
 	.box {
 		padding: 1rem 0;
